@@ -761,7 +761,7 @@
 
         </ul>
 
-        <div class="footer-list">
+        <!-- <div class="footer-list">
 
           <p class="footer-list-title">Get a newsletter</p>
 
@@ -775,7 +775,23 @@
             <button type="submit" class="btn btn-primary">Subscribe</button>
           </form>
 
-        </div>
+        </div> -->
+
+        <div class="footer-list">
+          <p class="footer-list-title">Get a newsletter</p>
+          <p class="newsletter-text">
+            For the latest deals and tips, travel no further than your inbox
+          </p>
+        
+          <form action="" class="newsletter-form" id="newsletterForm" onsubmit="handleFormSubmit(event)">
+            <input type="email" name="email" required placeholder="Email address" class="newsletter-input" id="emailInput">
+        
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        
+          <!-- Success message hidden by default -->
+          <p id="successMessage" style="display: none; color: green; margin-top: 10px;">Thank you for subscribing! Check your inbox for the latest updates.</p>
+        </div>     
 
       </div>
 
